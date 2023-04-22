@@ -233,6 +233,12 @@ progress::-webkit-progress-bar {
 			
 }
 
+/*------------------------------formacion--------------------------*/
+
+#formacion li{
+    font-size: 20px;
+}
+
 /*------------------------------proyectos--------------------------*/
 
 .proyectos{
