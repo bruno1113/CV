@@ -7,10 +7,10 @@
     <meta name="author" content="Vargas Balderas Bruno Valmiki ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="Image/monitor.png"/>
-    <script src="https://kit.fontawesome.com/b71255937b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="animateprogress.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>CV Online</title>
@@ -25,7 +25,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-          <div class="collapse navbar-collapse" id="opciones">
+        <div class="collapse navbar-collapse" id="opciones">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item ">
                     <a class="nav-link " aria-current="page" href="#div-principal"> <img src="Image/hogar.png" alt=""> Inicio</a>
@@ -51,46 +51,48 @@
     </nav>
     
     <div class="background">
-        <img src="Image/fondo.jpg" class="img-fluid" alt="Fotografia">
+        <img src="Image/fondo.png" class="img-fluid " alt="Fotografia">
     </div>
 
     <div class="offset heading-content text-center d-flex justify-content-center align-items-center" id="div-principal">
         <div class="bg-secondary w-50 " id="cuadro" >
             <h5 class="holasoy">Hola soy</h5>
             <h1 class="bruno">Bruno Vargas</h1>
-            <p class="curriculum">Y este es mi Curriculum</p>
+            <p class="curriculum">(Y este es mi Curriculum)</p>
  
         </div>
            </div>
 
 
     <!--------------------------- sobre mi inicio ----------------->
-    <div id="sobremi" class="offset container mt-1 mb-1">
+
+    <div id="sobremi" class="offset container mt-5 mb-5">
         <div class="post-heading text-center">
             <h3 class="display-4 font-weight-bold">Perfil</h3>
-            <hr class="w-50 mx-auto pb-2">
+            <hr class="w-50 mx-auto pb-1">
         </div>
         <div class="row">
             <div class="col-lg-6 col-md-6 col-s-12 mt-3" align="center">
                 <img src="Image/foto.jpg" width="80%" class="img-fluid" alt="Foto2">
             </div>
 
-            <div class="col-lg-6 col-md-6 col-s-12 mt-3 pt-5">
+            <div class="col-lg-6 col-md-6 col-s-12 mt-3 pt-4">
                 <h2>Bruno Valmiki Vargas Balderas</h2>
                 <hr class="pb-1">
-                <p><strong>Residencia: </strong>  Miguel Hidalgo,CDMX </p>
-                <p><strong>Edad : </strong>  26 años</p>
-                <p>Con gusto en el desarrollo de tecnologías de diseño web y bases de datos,
-                    tratando de implementar los nuevos desarrollos tecnológicos que salen constantemente
-                    en los trabajos realizados, desempeñándome individualmente o grupalmente.
+                <p class="perfil"><strong>Residencia: </strong>  Hidalgo,Tizayuca </p>
+                <p class="perfil"><strong>Edad : </strong>  26 años</p>
+                <p class="perfil">Con gusto en el desarrollo de tecnologías de diseño web y bases de datos,
+                    implementando los nuevos desarrollos tecnológicos que salen constantemente.
+                    Manejo de lenguajes como Java o Python para el desarrollo de otros tipos de proyecto. 
                 </p>
                 <button class="btn w-50">
-                    <a href="CV.pdf"  download="Curriculum.pdf">Curriculum   <i class="fa-solid fa-download">  </i></a>
+                    <a href="CV/Curriculum.pdf"  download="Curriculum.pdf">Curriculum   <i class="fa-solid fa-download">  </i></a>
                 </button>
             </div>
         </div>
 
     </div>
+
     <!------------------- sobre mi final------------------->
     <!-------------------especialidades incio ----------------->
     <section id="skills">
@@ -106,23 +108,23 @@
                     <div class="center">
                         <legend>Bases de datos</legend>
                         <div class="progress">
-                            <p>(MySQL)</p>
-                            <progress id="bases" max="100" value="70"></progress>
+                            <p>(MySQL) </p>
+                            <progress id="bases" max="100" value="75"></progress>
                             <span></span>
                         </div>
 
                         <legend>Diseño de paginas Web</legend>
                         <div class="progress">
-                            <p>(HTML y CSS)</p>
-                            <progress id="diseño" max="100" value="75"></progress>
+                            <p>(HTML y CSS) </p>
+                            <progress id="diseño" max="100" value="80"></progress>
                             <span></span>
                         </div>
 
                         <div class="clear"></div>
                         <legend>Conocimiento intermedio de JavaScript</legend>
                         <div class="progress">
-                            <p>(JavaScript)</p>
-                            <progress id="java" max="100" value="70"></progress>
+                            <p>(JavaScript) </p>
+                            <progress id="javascript" max="100" value="75"></progress>
                             <span></span>
                         </div>
                     </div>
@@ -132,16 +134,24 @@
 
                     <legend>Conocimiento intermedio de PHP</legend>
                     <div class="progress">
-                        <p>(PHP)</p>
-                        <progress id="php" max="100" value="75"></progress>
+                        <p>(PHP) </p>
+                        <progress id="php" max="100" value="70"></progress>
                         <span></span>
                     </div>
-                    <div class="clear"></div>
 
-                    <legend>Conocimiento Inglés</legend>
+
+                    <legend>Conocimiento intermedio de Java</legend>
                     <div class="progress">
-                        <p>Inglés</p>
-                        <progress id="ingles" max="100" value="70"></progress>
+                        <p>(Java) </p>
+                        <progress id="java" max="100" value="70"></progress>
+                        <span></span>
+                    </div>
+
+                    <div class="clear"></div>
+                    <legend>Conocimiento intermedio en Inglés</legend>
+                    <div class="progress">
+                        <p>Inglés </p>
+                        <progress id="ingles" max="100" value="75"></progress>
                         <span></span>
                     </div>
 
@@ -177,8 +187,8 @@
                     <br>
                     <li>Pasante de la Licenciatura en Tecnologías de la Información</li>
                     <br>
-                    <li>Curso Ingles Quick Learning <br>
-                        Julio 2017- diciembre 2017 </li>
+                    <li>Julio 2017- diciembre 2017 <br>
+                        Curso Ingles Quick Learning </li>
                 </ul>
             </div>
         </div>
@@ -189,7 +199,7 @@
 
     <!-------------------proyectos incio ----------------->
     <div class="proyectos">
-        <div id="proyectos" class="offset container mt-5 mb-5">
+        <div id="proyectos" class="offset container mt-5 ">
             <div class="post-heading text-center">
                 <h3 class="display-4 font-weight-bold">Proyectos</h3>
                 <hr class="w-50 mx-auto pb-2">
@@ -210,9 +220,8 @@
                         <li><strong> Creacion de una PWA de mensajeria</strong> (HTML, CSS, JSON, JQuery,IndexDB)</li>
                         <p>(Aplicación Web Progresiva sobre una caricatura.)</p>
                         <div align="center">
-                            <a href="https://bruno1113.github.io/southpark/"><img src="Image/screen.jpg" width="60%" alt="Miniatura PWA"></a>
+                            <a href="https://bruno1113.github.io/southpark/"><img src="Image/screen.png" width="60%" alt="Miniatura PWA"></a>
                         </div>
-
 
                     </ul>
 
@@ -225,17 +234,15 @@
                         <li><strong> Punto de venta </strong> (C#, SQL Server)</li>
                         <p>(Desarrollo de interfaz en Visual Code)</p>
 
-                        <li><strong> Juego Unity </strong> (C#, Unity)</li>
-                        <p>(Creación de un juego básico en Unity y Visual)</p>
-
                         <li><strong> Creación de una PWA para IOT </strong>(PHP, CSS3, HTML5, Bootstrap, JavaScript, Json ,MySQL) </li>
-                        <p>(Creacion de una Aplicacion Web Preogresiva en Visual Code)</p>
-                        
+                        <p>(Creacion de una Aplicacion Web Progresiva en Visual Code)</p>
+
                         <li><strong>Pagina de Ingles para nivel Bachillerato</strong>(HTML5,CSS,Bootstrap,PHP,JavaScript,MySQL)</li>
                         <p>(Creacion de pagina de Ingles como recurso de refuerzo)</p>
                         <div align="center">
                             <a href="#"><img src="Image/proyecto.jpg" width="60%" alt="Miniatura Pagina Web"></a>
                         </div>
+
                     </ul>
                 </div>
             </div>
@@ -249,11 +256,11 @@
         <div class="container p-4">
             <h5>Redes Sociales</h5>
             <section class="mb-4">
-                <!------ Gmail ----->
+                <!------ Twitter ----->
                 <a class="btn btn-outline-light btn-floating m-1" href="mailto:bruno.v.vargas13@gmail.com" role="button"><img src="Image/gmail.png" alt=""></a>
 
                 <!------- Linkedin ----->
-                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/bruno-vargas-balderas-850105233/" role="button"><img src="Image/linkedin.png" alt="LinkedIn"></a>
+                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/bruno-vargas-balderas-850105233/" title=" role="button"><img src="Image/linkedin.png" alt="LinkedIn"></a>
 
                 <!-------- Github ------->
                 <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://github.com/bruno1113/CV.git" role="button"><img src="Image/github.png" alt="GitHub"></a> 
@@ -327,7 +334,7 @@
                                 <p><img src="Image/correo.png" alt=""> eder_remirez@uaeh.edu.mx</p>
                             </li>
                             <li>
-                                <p><img src="Image/titulo.png" alt=""> Ingenieria en Computación</p>
+                                <p><img src="Image/titulo.png" alt=""> Ing. en Computación</p>
                             </li>
                         </ul>
                     </div>
@@ -351,6 +358,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b71255937b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <script type="text/javascript">
@@ -359,16 +367,19 @@
 
         animateprogress("#bases", 75);
         animateprogress("#diseño", 80);
-        animateprogress("#java", 75);
+        animateprogress("#javascript", 75);
         animateprogress("#php", 70);
+        animateprogress("#java", 70);
         animateprogress("#ingles", 75);
+
 
     }
     document.querySelector("#boton").addEventListener("click", function () {
         animateprogress("#bases", 75);
         animateprogress("#diseño", 80);
-        animateprogress("#java", 75);
+        animateprogress("#javascript", 75);
         animateprogress("#php", 70);
+        animateprogress("#java", 70);
         animateprogress("#ingles", 75);
 
     });
